@@ -30,7 +30,7 @@ namespace RolePlayingCityDevelopment
         public Building()
         {
             Random r = new Random();
-            name = "Random " + r.ToString();
+            name = "Random " + r.Next().ToString();
         }
     }
 

@@ -72,7 +72,7 @@ namespace RolePlayingCityDevelopment
             var numberOfBuildings = r.Next(6, 15);
             for (int i = 0; i < numberOfBuildings; i++)
             {
-                
+                buildings.Add(new Building());
             }
         }
     }
