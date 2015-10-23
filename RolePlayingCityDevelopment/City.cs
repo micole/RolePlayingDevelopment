@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RolePlayingCityDevelopment
 {
-    public enum Size
+    public enum CitySize
     {
         Village,
         Town,
@@ -29,7 +29,7 @@ namespace RolePlayingCityDevelopment
         public IList<Neighborhood> neighborhoods { get; set; }
         public Wealth cityWealth { get; set; }
 
-        public City(Size citySize)
+        public City(CitySize citySize)
         {
             neighborhoods = new List<Neighborhood>();
             Random r = new Random();
@@ -37,16 +37,16 @@ namespace RolePlayingCityDevelopment
             int numberOfNeighborhoods = 0;
             switch (citySize)
             {
-                case Size.Village:
+                case CitySize.Village:
                     numberOfNeighborhoods = 1;
                     break;
-                case Size.Town:
+                case CitySize.Town:
                     numberOfNeighborhoods = 3;
                     break;
-                case Size.City:
+                case CitySize.City:
                     numberOfNeighborhoods = 5;
                     break;
-                case Size.Capital:
+                case CitySize.Capital:
                     numberOfNeighborhoods = 7;
                     break;
             }
@@ -59,21 +59,5 @@ namespace RolePlayingCityDevelopment
         }
     }
 
-    public class Neighborhood
-    {
-        public string name { get; set; }
-        public IList<Building> buildings { get; }
-        public Wealth neighborhoodWealth { get; }
-
-        public Neighborhood(Wealth nWealth)
-        {
-            buildings = new List<Building>();
-            Random r = new Random();
-            var numberOfBuildings = r.Next(6, 15);
-            for (int i = 0; i < numberOfBuildings; i++)
-            {
-                buildings.Add(new Building());
-            }
-        }
-    }
+    
 }

@@ -8,7 +8,7 @@ namespace RolePlayingCityDevelopment.Tests
         [Fact]
         public void CityIsNotNull()
         {
-            var city = new City(Size.City);
+            var city = new City(CitySize.City);
             Assert.NotNull(city);
         }
     }

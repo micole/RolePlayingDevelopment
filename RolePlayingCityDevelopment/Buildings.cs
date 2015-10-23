@@ -16,7 +16,6 @@ namespace RolePlayingCityDevelopment
         House,
         Resturant,
         Inn
-
     }
 
 
