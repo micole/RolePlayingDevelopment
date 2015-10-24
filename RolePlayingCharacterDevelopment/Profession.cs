@@ -3,6 +3,8 @@ using System;
 
 namespace RolePlayingCharacterDevelopment
 {
+
+    //Potentially not going to be used.
     public enum Profession
     {
         //Artisan

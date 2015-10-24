@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Buildings.cs" />
     <Compile Include="City.cs" />
-    <Compile Include="IBuildingType.cs" />
     <Compile Include="Neighborhood.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Runner.cs" />
