@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.IO;
 
 namespace RolePlayingCharacterDevelopment
@@ -46,6 +47,25 @@ namespace RolePlayingCharacterDevelopment
         public Person(Gender g)
         {
             //TODO: when names implemented, make the name appropriate
+        }
+
+        public Person(Person dad, Person mom)
+        {
+            firstName = Path.GetRandomFileName().Replace(".", "");
+            familyName = dad.familyName;
+            
+        }
+
+        private Race calculateRace(Race d, Race m)
+        {
+            if((d == Race.Human && m == Race.Elf) || (m == Race.Human && d == Race.Elf))
+            {
+                return Race.Halfelf;
+            }
+            //TODO: figure out other matchups
+            //For now return father race
+            return d;
+            
         }
 
         

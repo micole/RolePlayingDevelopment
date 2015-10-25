@@ -8,8 +8,8 @@
     <ProjectGuid>{51BC56E1-8667-4A8D-AF00-72CE4210F660}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RolePlayingCityTests</RootNamespace>
-    <AssemblyName>RolePlayingCityTests</AssemblyName>
+    <RootNamespace>RolePlayingCharacterDevelopmentTests</RootNamespace>
+    <AssemblyName>RolePlayingCharacterDevelopmentTests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FamilyTests.cs" />
+    <Compile Include="PersonDescriptorFactoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

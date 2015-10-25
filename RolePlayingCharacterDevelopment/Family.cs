@@ -15,21 +15,34 @@ namespace RolePlayingCharacterDevelopment
             children = new List<Person>();
         }
 
+        public string FamilyName()
+        {
+            return dad.familyName;
+        }
+
         public void RandomFamily()
         {
             //TODO: Random family name generator
             string familyName = "Smith";
             dad = new Person();
-            dad.familyName = familyName;
 
             mom = new Person();
-            mom.familyName = familyName;
 
             for(int i = 0; i <= randomWeightedNumberOfChildren(); i++)
             {
                 Person c = new Person();
-                c.familyName = familyName;
                 AddChild(c);
+            }
+            SetFamilyName(familyName);
+        }
+
+        public void SetFamilyName(string familyName)
+        {
+            dad.familyName = familyName;
+            mom.familyName = familyName;
+            foreach (Person c in children)
+            {
+                c.familyName = familyName;
             }
         }
 

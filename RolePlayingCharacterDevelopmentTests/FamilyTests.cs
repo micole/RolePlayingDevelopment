@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace RolePlayingCityTests
+namespace RolePlayingCharacterDevelopmentTests
 {
     using RolePlayingCharacterDevelopment;
     public class FamilyTests
@@ -15,9 +15,7 @@ namespace RolePlayingCityTests
         {
             var family = new Family();
             family.dad = new Person();
-            family.dad.familyName = "Smith";
             family.mom = new Person();
-            family.mom.familyName = "Smith";
             family.AddChild(new Person());
             Assert.NotNull(family);
         }

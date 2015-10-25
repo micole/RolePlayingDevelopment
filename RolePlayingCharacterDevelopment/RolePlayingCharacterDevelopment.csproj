@@ -42,8 +42,11 @@
   <ItemGroup>
     <Compile Include="ClassType.cs" />
     <Compile Include="Family.cs" />
+    <Compile Include="IPersonDescriptor.cs" />
     <Compile Include="Job.cs" />
     <Compile Include="Person.cs" />
+    <Compile Include="PersonDescriptorFactory.cs" />
+    <Compile Include="PersonDescriptorHair.cs" />
     <Compile Include="Profession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Race.cs" />

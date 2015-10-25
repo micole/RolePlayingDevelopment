@@ -55,9 +55,6 @@ namespace RolePlayingCityDevelopment
             {
                 neighborhoods.Add(new Neighborhood(Wealth.LowerClass));
             }
-
         }
     }
-
-    
 }
