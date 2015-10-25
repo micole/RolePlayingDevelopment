@@ -36,12 +36,17 @@ namespace RolePlayingCharacterDevelopment
             // Jumpy and Fat
             // Tall and Particularly Long Hair
             //More examples here: http://www.mathemagician.net/town.html
-
+            var pdf = new PersonDescriptorFactory();
+            description = pdf.GenerateDescription();
             //TODO: Based on the class, they can have specific jobs
 
             job = new Job();
             race = Race.Unknown;
             classType = ClassType.Unknown;
+            
+
+
+
         }
 
         public Person(Gender g)
