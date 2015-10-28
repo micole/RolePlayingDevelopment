@@ -23,7 +23,6 @@ namespace RolePlayingCityDevelopment
     {
         public string name { get; set; }
         public BuildingType buildingType { get; set; }
-        public int floors { get; set; }
         public string description { get; }
 
         public Building()
