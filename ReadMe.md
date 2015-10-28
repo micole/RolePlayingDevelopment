@@ -1,4 +1,4 @@
-= RolePlayingDevelopment =
+# RolePlayingDevelopment #
 
 Library to help generate locations and people for my tabletop games.
 
@@ -6,7 +6,7 @@ Currently the setting of the generated locations and people are in a generic fan
 
 Hopefully I'll be able to create more settings as time goes on, but for now I just need to get the library in place.
 
-== Character Development ==
+## Character Development ##
 
 A person can be described with the following:
 - First Name
@@ -18,14 +18,14 @@ A person can be described with the following:
 - Race
 
 
-=== IPersonDescriptor/PersonDescriptorFactory ===
+### IPersonDescriptor/PersonDescriptorFactory ###
 
 Any class that happens to implement the IPersonDescriptor can be called upon by the PersonDescriptorFactory to generate descriptions.
 
 At the moment descriptions will always be [Description1] and [Description2].
 
 
-== City Development ==
+## City Development ##
 
 Cities are generated from Neighborhoods.
 
